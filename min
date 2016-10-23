@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>I love you</title>
+	<style type="text/css">
+	p{
+		font-size:20px;
+		color:blue;
+		font-weight:bold;
+	}
+	</style>
+</head>
+<body>
+	<h1>我只喜欢你</h1>
+	<p>Together to see forever</p>
+
+	<style type="text/css">
+	p{
+		font-size:100px;
+		color:red;
+		font-weight:bold;
+	}
+	</style>
+	<P>我陪你，走下去</P>
+
+</body>
+</html>
