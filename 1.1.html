@@ -1,18 +1,240 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>表单标签</title>
+<style type="text/css">
+
+* {font-family: "Microsoft Yahei";
+}
+#div1{float:left;}
+#div2{float: right}
+.datu{text-align: center;}
+#div3{float:left;}
+#div4{float:right;}
+#div5{float:right;}
+a{text-decoration:none;}
+.type{color:red;font-size:18px;font-weight:bold;letter-spacing:0.5em;}
+#form1{float: left;}
+#form2{float: right;}
+h1{font-size: 13px}
+#div6{float: bottom;bottom:10px;}
+.div7{clear：both；bottom:0px;clear:both;}
+
+
+
+.nav1{background:#FF44AA ;}
+.nav2{background:#00DDDD;}
+.nav3{background:#227700;}
+.nav4{background:#9999FF;}
+.nav5{background:#CC00CC;}
+.nav6{background:	#33FFFF;}
+.nav7{background:	#BBBB00;}
+.nav8{background:#886600;}
+.nav9{background:	#008800;}
+.nav10{background:#8C0044;}
+.nav11{background:#0044BB;}
+.nav12{background:#FFA488;}
+.nav13{background:	#886600 ;}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jOuery:动态下滑菜单演示--by维奇</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+.menu { height: 45px; display: block; }
+.menu ul { list-style: none; padding: 0; margin: 0; }
+.menu ul li { float: left; /* 菜单子元素的内容超出不可见 */  
+			overflow: hidden; position: relative; text-align: center; line-height: 45px; }
+.menu ul li a { /* 必须是相对定位  */ 
+			position: relative; display: block; width: 110px; height: 45px; font-family: Arial; font-size: 11px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; cursor: pointer; }
+.menu ul li a span { /* 所有层将使用绝对定位 */
+			position: absolute; left: 0; width: 110px; }
+.menu ul li a span.out { top: 0px; }
+.menu ul li a span.over,  .menu ul li a span.bg { /* 起初.over层和.bg层相对a元素-45px以达到隐藏 */  
+			top: -45px; }
+
+/** 简化版示例 **/
+		
+		#menu2 { background:#45A8DF; }
+#menu2 ul li a { color:#FFF; }
+#menu2 ul li a span.over { background: #A6DD00; color:#333; }
+#menu2 ul li.nav1 a span.over { background: #fea274; }
+#menu2 ul li.nav2 a span.over { background: #b0bbba; }
+#menu2 ul li.nav3 a span.over { background: #a3f091; }
+#menu2 ul li.nav4 a span.over { background: #86dbf9; }
+#menu2 ul li.nav5 a span.over { background: #e0caf0; }
+#menu2 ul li.nav6 a span.over { background: #9dace9; }
+#menu2 ul li.nav7 a span.over { background: 	#55AA00; }
+#menu2 ul li.nav8 a span.over { background: #008866; }
+#menu2 ul li.nav9 a span.over { background: #BB5500 ; }
+#menu2 ul li.nav10 a span.over { background: #C10066 ; }
+#menu2 ul li.nav11 a span.over { background: #BBFFEE; }
+#menu2 ul li.nav12 a span.over { background: #FF77FF; }
+#menu2 ul li.nav13 a span.over { background: #00DDDD; }
+<br />
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script language="javascript">
+		$(document).ready(function() {
+			
+			
+					
+
+			/*	简化版示例	*/
+					
+			$("#menu2 li a").wrapInner( '<span class="out"></span>' );
+			
+			$("#menu2 li a").each(function() {
+				$('<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+
+			$("#menu2 li a").hover(function() {
+				$(".out",this).stop().animate({'top':'45px'},200); // 向下滑动 - 隐藏
+				$(".over",this).stop().animate({'top':'0px'},200); // 向下滑动 - 显示
+
+			}, function() {
+				$(".out",this).stop().animate({'top':'0px'},200); // 向上滑动 - 显示
+				$(".over",this).stop().animate({'top':'-45px'},200); // 向上滑动 - 隐藏
+			});
+
+		});
+	</script>
+
+
+</style>
+<title>中国石油大学upc</title>
+
 </head>
+
 <body>
-<form   method="get"action="save.php">
-      <label for="username">用户名:</label>
-      <input type="text"  name="username" id="username" value="" />
-      <label for="pass">密码:</label>
-      <input type="password"  name="pass" id="pass" value="" />    
-      <input type="submit" value="确定"  name="submit" />
-      <input type="reset" value="重置" name="reset" />
-</form>  
+	
+<div id="div1"><img src="http://www.upc.edu.cn/_upload/tpl/00/15/21/template21/images/logo_long20150923.jpg" alt="中国石油大学" title = "中国石油大学官网">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div id="div2"><a href="http://english.upc.edu.cn/" target="_blank">English Version</a><br />
+<a href="https://wx.qq.com/" target="_blank">官方微信</a>
+<a href="http://weibo.com/login.php" target="_blank">官方微博</a><br /><br />
+<a href="http://www.yiban.cn/school/index/id/5370538" target="_blank">石大易班</a></div>
+
+
+
+<div id="content">
+  <hr />
+  <br/>
+  <div id="menu2" class="menu">
+    <ul>
+      <li class="nav1"><a href="javascript:;">学校概况</a></li>
+      <li class="nav2"><a href="javascript:;">教学院部</a></li>
+      <li class="nav3"><a href="javascript:;">机构设置</a></li>
+      <li class="nav4"><a href="javascript:;">人才培养</a></li>
+      <li class="nav5"><a href="javascript:;">科学研究</a></li>
+      <li class="nav6"><a href="javascript:;">招生信息</a></li>
+      <li class="nav7"><a href="javascript:;">人才招聘</a></li>
+      <li class="nav8"><a href="javascript:;">合作交流</a></li>
+      <li class="nav9"><a href="javascript:;">就业指导</a></li>
+      <li class="nav10"><a href="javascript:;">学报出版</a></li>
+      <li class="nav11"><a href="javascript:;">石大要闻</a></li>
+      <li class="nav12"><a href="javascript:;">图书馆</a></li>
+      <li class="nav13"><a href="javascript:;">办公信息</a></li>
+
+    </ul>
+  </div>
+</div>
+<div id="footer">
+<div style="width:550px;margin:20px auto;">
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="datu"><img src="http://www.upc.edu.cn/_upload/article/images/48/c4/13362e97476a844f72bc4fe7cb76/642469f5-d62d-48e1-82c2-8331e19dc897.jpg" alt="中国石油大学" title = "中国石油大学官网"></div>
+
+<div id="div3">
+<li class="type">石大新闻 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://news.upc.edu.cn/" target="_blank">更多</a></li>
+<ul>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c251a79891/page.htm" target="_blank">刘珂率队走访胜利油田</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c251a79890/page.htm" target="_blank">石大获批建设安全监管监察学院</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c251a79887/page.htm" target="_blank">196名学生获国家留学基金委公派资助</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c251a79885/page.htm" target="_blank">第18届大学生社团文化节开幕</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c251a79882/page.htm" target="_blank">国家自然科学基金委员会第168期双清论坛在石大举行</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1103/c251a79868/page.htm" target="_blank">美国机械工程师学会代表来校开展合作</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c251a79861/page.htm" target="_blank">党委中心组学习贯彻十八届六中全会精神</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c251a79854/page.htm" target="_blank">山红红率队走访日照市委市政府</a></li>
+</ul>
+</div>
+
+
+<div id="div4">
+<li class="type">学术动态 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://news.upc.edu.cn/xsdt/list.htm" target="_blank">更多</a></li>
+<ul>
+	<li><a href="http://news.upc.edu.cn/2016/1104/c258a79881/page.htm" target="_blank">【预告】还原真实的大汉王朝</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1103/c258a79867/page.htm" target="_blank">余刚畅谈分布式光纤声波检测技术在油气资源勘探开发上的应用</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c258a79860/page.htm" target="_blank">【预告】国际文化大观园：第三届非英语国家文化系列讲座</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c258a79859/page.htm" target="_blank">李阳院士解析碳酸盐岩缝洞储集体发育规律及建模方法</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1031/c258a79761/page.htm" target="_blank">【预告】关于坚持马克思主义在意识形态领域指导地位的问题</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1101/c258a79785/page.htm" target="_blank">【预告】琅琊文化与海上丝绸之路</a>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c258a79855/page.htm" target="_blank">【预告】音乐大讲堂系列学术报告</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c258a79848/page.htm" target="_blank">【预告】“互联网+”时代的创新创业</a></li>
+</ul>
+</div>
+
+
+<div id="div5">
+<li class="type">通知公告 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://news.upc.edu.cn/tzgg/list.htm" target="_blank">更多</a></li>
+<ul>
+	<li><a href="http://news.upc.edu.cn/2016/1103/c277a79863/page.htm" target="_blank">国家留学基金委与法国、芬兰合作互换奖学金2017年遴选工作通知</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1102/c277a79847/page.htm" target="_blank">关于举办首届大学生创新创业嘉年华活动的通知</a></li>
+	<li><a href="http://202.194.145.153:8888/contents/46/557.html" target="_blank">关于德国卓越大学留学项目宣讲会的通知</a></li>
+	<li><a href="http://202.194.145.153:8888/contents/46/556.html" target="_blank">关于2017年国家公派研究生类项目及校际交流项目咨询说明会通知</a></li>
+	<li><a href="http://jwc.upc.edu.cn/s/19/t/140/7d/4a/info97610.htm" target="_blank">关于做好2017年本科生海外联合培养项目学生报名的通知</a></li>
+	<li><a href="http://202.194.145.153:8888/contents/46/555.html" target="_blank">关于法国项目宣讲会的通知</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1026/c277a79637/page.htm" target="_blank">关于做好国际合作交流基金、本科生国际交流基金项目总结和申报的通知</a></li>
+	<li><a href="http://news.upc.edu.cn/2016/1026/c277a79635/page.htm" target="_blank">关于东营校区暖气试水的通知</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<form id="form1" method="post" action="save.php"><label for="username">站内搜索:</label><input type="text" name="username"value="upc"/><input type="submit" value="搜索"></form>
+
+<form id="form2" method="post" action="save.php"><label for="username">邮箱:</label><input type="text" name="username"/><label for="pass">@upc.edu.cn&nbsp;&nbsp;&nbsp;&nbsp;密码：</label><input type="password" name="pass"/><input type="submit" value="登陆"></form>
+
+
+<div id="div6">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友情链接：
+	<a href="http://www.moe.gov.cn/"target="_blank">教育部</a>
+	<a href="http://www.most.gov.cn/"target="_blank">科技部</a>
+	<a href="http://www.jyb.cn/"target="_blank">中国教育新闻网</a>
+	<a href="http://www.xinhuanet.com/"target="_blank">新华网</a>
+	<a href="http://www.people.com.cn/"target="_blank">人民网</a>
+	<a href="http://www.ifeng.com/"target="_blank">凤凰网</a>
+	<a href="http://www.cnpc.com.cn/"target="_blank">中国石油</a>
+	<a href="http://www.sinopecgroup.com/group/"target="_blank">中国石化</a>
+	<a href="http://www.cnooc.com.cn/"target="_blank">中国海油</a>
+	<a href="http://www.sinochem.com/"target="_blank">中国中化</a>
+	<a href="http://www.upc.edu.cn/2016/0801/c224a100/page.htm"target="_blank">更多>></a>
+</h1>
+</div>
+
+
+
+
+<div class="div7">
+	<div><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有：中国石油大学(华东)   网站维护：中国石油大学(华东)新闻网 编辑部  Email：netnews@upc.edu.cn  <br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;青岛校区：青岛市黄岛区长江西路66号 邮编：266580  东营校区：山东省东营市东营区北一路739号 邮编：257061  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鲁ICP备05021531号        鲁公网安备 37021002000005号</h1></div>
+
+</div>
+
+<div class="datu"><img src="http://dcs.conac.cn/image/blue_error.png" alt="中国石油大学" title = "中国石油大学官网"></div>
+
+
 </body>
-</html>
