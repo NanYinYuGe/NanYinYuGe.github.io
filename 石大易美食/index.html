@@ -1,0 +1,840 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pabulum a Food Category Flat bootstrap Responsive website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!--web-font-->
+<link href='http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic' rel='stylesheet' type='text/css'>
+<!--//web-font-->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pabulum Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+<script>
+	$(document).ready(function () {
+	    size_li = $("#myList li").size();
+	    x=1;
+	    $('#myList li:lt('+x+')').show();
+	    $('#loadMore').click(function () {
+	        x= (x+1 <= size_li) ? x+1 : size_li;
+	        $('#myList li:lt('+x+')').show();
+	    });
+	    $('#showLess').click(function () {
+	        x=(x-1<0) ? 1 : x-1;
+	        $('#myList li').not(':lt('+x+')').hide();
+	    });
+	});
+</script>
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu-icon.png" alt=""/></span>		
+				<ul class="nav1 cl-effect-5">
+					<li><a href="index.html" class="active"><span data-hover="OurStory">OurStory</span></a></li>
+					<li><a href="menu.html"> <span data-hover="Menu"> Menu </span> </a></li>
+					<li><a href="reservations.html"><span data-hover="Reservations">Reservations </span></a></li>
+					<li><a href="news.html"><span data-hover="News">News</span></a></li>
+					<li><a href="reviews.html"><span data-hover="Reviews"> Reviews </span></a></li>
+				</ul>
+				<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.nav1" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- /script-for-menu -->
+			</div>	
+			<div class="clearfix"> </div>
+		</div>	
+	</div>
+	<!--//header-->
+	<!--banner-->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-text">
+				<h1>The delicacy in [UPC].</h1><!--//header大大大标题-->
+				<div class="bnr-text-info">
+					<h6>Help you to feast what you want in our school.</h6>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--//banner-->
+	<!--dishes-->
+	<div class="dishes1">
+		<div class="container">
+			<!-- banner-text Slider starts Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+					// You can also use "$(window).load(function() {"
+						$(function () {
+						// Slideshow 4
+							$("#slider3").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+							}
+						});	
+					});
+				</script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container">
+				<div class="title">
+					<h3>FEATURED DISHES</h3>
+				</div>
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="dishes">
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img2.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Fugiat nulla sint</p>
+									<h4 class="rs">￥ 30</h4><!--//End-slider-script第一个菜！！！ -->
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img3.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Daute irure dolor</p>
+									<h4 class="rs">￥24</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img4.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Officia deserunt</p>
+									<h4 class="rs">￥60</h4>
+									<ul>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img5.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Pim minim veniam</p>
+									<h4 class="rs">￥17</h4>
+									<ul>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#" class="gry-str"></a> </li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</li>
+					<li>
+						<div class="dishes">
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img28.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Fugiat nulla sint</p>
+									<h4 class="rs">￥30</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img29.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Daute irure dolor</p>
+									<h4 class="rs">￥24</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a> </li>
+										<li><a href="#"> </a> </li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img30.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Officia mollit</p>
+									<h4 class="rs">￥60</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img31.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Pim minim veniam</p>
+									<h4 class="rs">￥17</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</li>
+					<li>
+						<div class="dishes">
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img32.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Fugiat nulla sint</p>
+									<h4 class="rs">￥30</h4>
+									<ul>
+										<li><a href="#"></a> </li>
+										<li><a href="#"></a> </li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img33.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Daute irure dolor</p>
+									<h4 class="rs">￥24</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img34.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Officia demollit</p>
+									<h4 class="rs">￥60</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img35.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Pim minim veniam</p>
+									<h4 class="rs">￥17</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</li>
+					<li>
+						<div class="dishes">
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img36.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Fugiat nulla sint</p>
+									<h4 class="rs">￥30</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img37.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Daute irure dolor</p>
+									<h4 class="rs">￥24</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img38.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Deserunt mollit</p>
+									<h4 class="rs">￥60</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 dishes-grids">
+								<img src="images/img39.jpg" alt="" title=""/>
+								<div class="dishes-text">
+									<p>Pim minim veniam</p>
+									<h4 class="rs">￥17</h4>
+									<ul>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+										<li><a href="#" class="gry-str"> </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+	<!--//dishes-->
+	<!--banner-bottom滚动完毕！！！！！！-->
+	<div class="banner-bottom"><!--banner-bottom菜单！！！！！！！！！-->
+		<div class="container">
+			<div class="menu-tag">
+				<h4>The Menu</h4>
+			</div>
+			<div class="load_more">	
+			<ul id="myList">
+				<li>
+					<div class="l_g">
+						<div class="l_g_r">
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Voluptate cillum fugiat.￥21.9</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$ 50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Metus varius laoreet.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Donec sodales magna.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Saugue velit cursus.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Arcu pede enim justo.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Cras dapibussemper nisi.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Quam semper libero.</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Nam eget dui Etiam.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+					</div>	
+				</li>
+				<li><div class="l_g">
+						<div class="l_g_r g_r">
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Voluptate cillum fugiat.</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Metus varius laoreet.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Donec sodales magna.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Saugue velit cursus.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Arcu pede enim justo.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"></span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Cras dapibussemper nisi.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Quam semper libero.</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Nam eget dui Etiam.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</li>
+				<li><div class="l_g">
+						<div class="l_g_r g_r">
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Voluptate cillum fugiat.</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Metus varius laoreet.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Donec sodales magna.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Saugue velit cursus.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-6 menu-grids">
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Arcu pede enim justo.</h4>
+										<h6>Tuna, Sweetcorn, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$50</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Cras dapibussemper nisi.</h4>
+										<h6>Pineapple, Minced Beef, Cheese.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$62</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Quam semper libero.</h4>
+										<h6>Cheese, tomato, mushrooms, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$25</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="menu-text">
+									<div class="menu-text-left">
+										<h4>Nam eget dui Etiam.</h4>
+										<h6>Chicken, mozzarella cheese, onions.</h6>
+									</div>
+									<div class="menu-text-midle">
+										<span class="line"> </span>
+									</div>
+									<div class="menu-text-right">
+										<h4>$30</h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>	
+					</div>	
+				</li>
+			</ul>
+			<div id="loadMore">load more</div>
+			<div id="showLess">show less</div>
+		</div>
+		</div>
+	</div>
+	<!--//banner-bottom-->
+	<!--gallery-->
+	<div class="gallery">
+		<div class="container">
+			<div class="title">
+				<h3>THE GALLERY</h3>
+			</div>
+			<div class="gallery-grids">
+				<div class="gallery-grids-left glry-img glry-first">
+					<a href="images/img6.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+						<img src="images/img6.jpg" alt="" class="img-responsive zoom-img"/>
+					</a>
+				</div>
+				<div class="gallery-grids-left">
+				    <div class="glry-img">
+						<a href="images/img7.jpg" class="swipebox"  title="Image Title">
+							<img src="images/img7.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="glry-img">
+						<a href="images/img8.jpg" class="swipebox"  title="Image Title">
+							<img src="images/img8.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>	
+				</div>
+				<div class="gallery-grids-left">
+					<div class="glry-img">
+						<a href="images/img9.jpg" class="swipebox"  title="Image Title">
+							<img src="images/img9.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="glry-img">
+						<a href="images/img10.jpg" class="swipebox"  title="Image Title">
+							<img src="images/img10.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>	
+				</div>
+				<div class="clearfix"> </div>
+				<!--swipebox -->	
+				<link rel="stylesheet" href="css/swipebox.css">
+					<script src="js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+				<!--//swipebox Ends -->
+			</div>
+		</div>
+	</div>
+	<!--//gallery-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 footer-left">
+				<ul>
+					<li>New York Restaurant</li>
+					<li>3926 Anmoore Road</li>
+					<li>New York, NY 10014</li>
+					<li>718-749-1714</li>
+				</ul>				
+			</div>
+			<div class="col-md-3 footer-left">
+				<ul>
+					<li>France Restaurant</li>
+					<li>68, rue  de la Couronne</li>
+					<li>75002 PARIS</li>
+					<li>02.94.23.69.56</li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-left">
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-right">
+				<a href="index.html"><img src="images/footer-logo.png" alt="logo"/></a>
+				<p>© 2015 All rights reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->	
+</body>
+</html>	
