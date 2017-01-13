@@ -9,15 +9,15 @@ font-size: 100%;
 	background-color: orange;
 	float: left;
 	border: solid red 2.5px;
-	margin: 10px;
+	margin: 1%;
 }
 .liu{
 	float: left;
 	text-align: center;
 	border: 2px black solid ;
-	margin: 20px;
-	width: 300px;
-	height: 200px;
+	margin: 1%;
+	width: 30%;
+	height: 100%;
 	
 	background-color: pink;
 	color: #8A5;
@@ -30,7 +30,7 @@ font-size: 100%;
 	background-position: 20% 10%;
 	float: left;
 	width: 100%;
-	margin-bottom: 12px;
+	margin-bottom: 1%;
 	background-color: pink;
 	text-align: center;
 	border: #19E solid 3px;
