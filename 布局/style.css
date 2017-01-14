@@ -19,8 +19,22 @@ a.herf:link,a.herf:visited{
 		text-decoration:none;
 		margin:1.2%;
 		float: left;
-
 			}
+a.herf:hover{
+		display:block;
+		font-weight:bold;
+		font-size:1.3em;
+		font-family:Arial, Verdana, Helvetica, sans-serif;
+		color:#EB3;
+		background-color:#456;
+		width:14%;
+		height: 45px;
+		text-align:center;
+		padding-top: 1%;
+		text-decoration:none;
+		margin:1.2%;
+		float: left;
+}
 
 
 .whole{
@@ -88,6 +102,10 @@ a{
 	width: 73%;
 	height: 100%;
 	float: left;
+}
+
+ul li {
+	list-style-image: url(http://icon.mobanwang.com/UploadFiles_8971/200805/20080522102801964.gif);
 }
 
 .end{
