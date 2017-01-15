@@ -34,6 +34,7 @@ a.herf:hover{
 		text-decoration:none;
 		margin:1.2%;
 		float: left;
+		border: solid red 1px;
 }
 
 
