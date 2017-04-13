@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width:1500px;
+	height:1500px;
+	text-decoration:none;
+	font-family:"Microsoft Yahei";
+	
+}
+
+
+#top{
+	width:1500px;
+	height:134px;
+	background:#336;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#top2{
+	width: 1300px;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	list-style-type: square;
+}
+
+#top2 a{
+	float:left;
+	width:200px;
+	/*margin:50px;*/
+	padding:30px;
+	text-align: center;
+	word-spacing: 0.3em;
+/*	background-color:#093;*/
+}
+#daohang ol{width:500px;}
+#top2 ul ol a:link,a:visited{
+	font-size: 25px;
+	font-weight: 400;
+	text-decoration: none;
+	color:#FFF;
+}
+#top2 ul ol a:hover{
+	font-weight:700;
+	color:#09C;
+}
+
+#daohang a{
+	letter-spacing: 0.2em;
+	width:2500px;
+	padding-left:30px;
+	padding-right:60px;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align: center;
+	word-spacing: 0.3em;
+	font-weight:500;
+	border: thin solid #999;
+}
+#daohang{
+	position:absolute;
+	left:-30px;
+	top:100px;
+	
+}
+
+#daohang ul ol{
+	position:relative;
+	top:50px;	
+	margin:100px;
+	list-style: square;
+
+}
+#daohang ul ol a:link,a:visited{
+	font-size: 21px;
+
+	text-decoration: none;
+	background-color:#9CC;
+
+}
+#daohang ul ol a:hover{
+	font-weight: 900;
+	background-color:#9C9;
+	
+}
+
+#passage{
+	position: absolute;
+	left: 500px;
+	top: 230px;
+	background-color: #9CC;
+	height: 1300px;
+	width: 800px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+	text-decoration: none;
+}
+#p1,#p2,#p3,#p4{
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+#passage h2{
+	letter-spacing: 0.3em;
+}
+#passage p{
+	
+}

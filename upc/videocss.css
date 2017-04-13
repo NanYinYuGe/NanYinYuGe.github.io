@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top2{
+	width: 1500px;
+	/*position: absolute;
+	left: 200px;
+	top: 0px;*/
+	list-style-type: square;
+	background-color:#069;
+	height:120px;
+	border-radius:10px;border:1px solid #036;
+}
+
+#top2 a{
+	float:left;
+	width:200px;
+	/*margin:50px;*/
+	margin:30px;
+	text-align: center;
+	word-spacing: 0.3em;
+/*	background-color:#093;*/
+}
+#daohang ol{width:500px;}
+#top2 ul ol a:link,a:visited{
+	font-size: 25px;
+	font-weight: 400;
+	text-decoration: none;
+	color:#FFF;
+}
+#top2 ul ol a:hover{
+	font-weight:700;
+	color:#6FF;
+	font-size:27px;
+}
+
+#top2 input{
+	position:relative;
+	top:30px;
+	height: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	background-color:#69F;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-right:18px;
+	border-radius:5px;border:1px solid #036;
+}
+
+#video{
+	margin-top:10px;
+	border-radius:5px;border:1px solid #036;
+	text-decoration: none;
+	background-image: url(picture/background/2.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1500px;
+	height: 850px;
+	background-position: center top;
+}
+#video h2{
+	margin-left:260px;
+}
+#video a{
+	text-decoration:none;
+	color:#069;
+}
+#video embed{
+	position:relative;
+	left:22px;
+}
+#word{
+	width: 280px;
+	font-size: 18px;
+	font-family: Microsoft-Yahei;
+	color: #006;
+	position: absolute;
+	top: 270px;
+	left: 1050px;
+	background-color: #9CC;
+	opacity: 0.4;
+	padding-left: 28px;
+	font-weight: 800;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+
+}
